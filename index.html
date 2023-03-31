@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Play&family=Prompt&family=Sarala&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="logo">
+        <img src="images/logovector.png" alt="">
+    </div>
+
+    <nav class="navbar fixed-top" style="padding: 0">
+        <ul style="margin: 0;">
+            <li><a href="#seccionCurso">Acerca del curso</a></li>
+            <li><a href="#seccionIntegrantes">Integrantes</a></li>
+            <li><a href="#seccionFotos">Galería</a></li>
+            <li><a class="lastA" href="#seccionTabla">Tabla de contenido</a></li>
+        </ul>
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Otros grupos
+            </a>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Grupo 1</a></li>
+                <li><a class="dropdown-item" href="#">Grupo 2</a></li>
+                <li><a class="dropdown-item" href="#">Grupo 3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="seccionCurso">
+        <div class="container">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+    
+                <!-- Slides -->
+                <div class="carousel-inner">
+    
+                    <div class="carousel-item active">
+                        <div class="cont2">
+                            <div class="block-img">
+                                <img src="images/sanmarcos.jpg" alt="Imagen 1">
+                            </div>
+                            <div class="block-info">
+                                <h3>Acerca del curso</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget ipsum lobortis,
+                                    finibus nulla vitae, imperdiet eros. Donec id magna eu lacus pulvinar eleifend.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="cont2">
+                            <div class="block-img">
+                                <img src="images/system.png" alt="Imagen 2">
+                            </div>
+                            <div class="block-info">
+                                <h3>Estrategia didáctica</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget ipsum lobortis,
+                                    finibus nulla vitae, imperdiet eros. Donec id magna eu lacus pulvinar eleifend.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="cont2">
+                            <div class="block-img">
+                                <img src="images/docente.png" alt="Imagen 3">
+                            </div>
+                            <div class="block-info">
+                                <h3>Docente del curso</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget ipsum lobortis,
+                                    finibus nulla vitae, imperdiet eros. Donec id magna eu lacus pulvinar eleifend.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Controles -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+    
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div id="seccionIntegrantes">
+        <h2 class="subtitulo">Integrantes</h2>
+        <div id="integrantes">
+            <div class="integrante">
+                <img src="images/profile.jpg" alt="Foto 1">
+                <h3>Integrante 1</h3>
+            </div>
+            <div class="integrante">
+                <img src="images/profile.jpg" alt="Foto 2">
+                <h3>Integrante 2</h3>
+            </div>
+            <div class="integrante">
+                <img src="images/profile.jpg" alt="Foto 3">
+                <h3>Integrante 3</h3>
+            </div>
+            <div class="integrante">
+                <img src="images/profile.jpg" alt="Foto 4">
+                <h3>Integrante 4</h3>
+            </div>
+            <div class="integrante">
+                <img src="images/profile.jpg" alt="Foto 5">
+                <h3>Integrante 5</h3>
+            </div>
+            <div class="integrante">
+                <img src="images/profile.jpg" alt="Foto 6">
+                <h3>Integrante 6</h3>
+            </div>
+            <div class="integrante">
+                <img src="images/profile.jpg" alt="Foto 7">
+                <h3>Integrante 7</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="seccionFotos">
+        <h2 class="subtitulo">Plantando Nuestros Árboles</h2>
+        <div id="fotos">
+            <div class="foto">
+                <img id="foto1" src="images/paisaje.jpg" alt="Foto 1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores repellat enim quia laboriosam,
+                    fuga eius blanditiis aliquam aperiam sint nemo totam.</p>
+            </div>
+            <div class="foto">
+                <img id="foto2" src="images/paisaje.jpg" alt="Foto 2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores repellat enim quia laboriosam,
+                    fuga eius blanditiis aliquam aperiam sint nemo totam.</p>
+            </div>
+            <div class="foto">
+                <img id="foto3" src="images/paisaje.jpg" alt="Foto 3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores repellat enim quia laboriosam,
+                    fuga eius blanditiis aliquam aperiam sint nemo totam.</p>
+            </div>
+            <div class="foto">
+                <img id="foto4" src="images/paisaje.jpg" alt="Foto 4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores repellat enim quia laboriosam,
+                    fuga eius blanditiis aliquam aperiam sint nemo totam.</p>
+            </div>
+            <div class="foto">
+                <img id="foto5" src="images/paisaje.jpg" alt="Foto 5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores repellat enim quia laboriosam,
+                    fuga eius blanditiis aliquam aperiam sint nemo totam.</p>
+            </div>
+            <div class="foto">
+                <img id="foto6" src="images/paisaje.jpg" alt="Foto 6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores repellat enim quia laboriosam,
+                    fuga eius blanditiis aliquam aperiam sint nemo totam.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="seccionTabla">
+        <h2 class="subtitulo">Contenido del Curso</h2>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>Nº Semana</th>
+                    <th>Temas</th>
+                    <th>Clases</th>
+                    <th>Laboratorio</th>
+                    <th>Tareas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Introducción a HTML</td>
+                    <td><a href="presentacion1.pptx">Descargar</a></td>
+                    <td>-</td>
+                    <td><a href="tarea1.docx">Descargar</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Introducción a CSS</td>
+                    <td><a href="presentacion2.pptx">Descargar</a></td>
+                    <td><a href="laboratorio1.docx">Descargar</a></td>
+                    <td><a href="tarea2.docx">Descargar</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Introducción a JavaScript</td>
+                    <td><a href="presentacion3.pptx">Descargar</a></td>
+                    <td>-</td>
+                    <td><a href="tarea3.docx">Descargar</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Frameworks de desarrollo web</td>
+                    <td><a href="presentacion4.pptx">Descargar</a></td>
+                    <td><a href="laboratorio2.docx">Descargar</a></td>
+                    <td><a href="tarea4.docx">Descargar</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
