@@ -88,7 +88,8 @@ nav li a:hover {
 #seccionIntegrantes {
     padding: 52px 0;
     /* background-color: #286955; */
-    display: flex;
+    	display: grid;
+	grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     flex-direction: column;
     align-items: center;
