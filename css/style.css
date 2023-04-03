@@ -271,6 +271,8 @@ tr:nth-child(even) {
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .container {
@@ -284,15 +286,6 @@ tr:nth-child(even) {
 .block-info {
     padding: 50px;
     background-color: #E4EFE7;
-}
-
-.block-info h3 {
-    font-family: 'Play', sans-serif;
-}
-
-.block-info p {
-    width: 80%;
-    font-family: 'Sarala', sans-serif;
 }
 
 .block-img {
@@ -318,3 +311,22 @@ footer img {
     width: 70px;
     height: 70px;
 }
+
+.carousel-item img {
+    width: 485px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .block-info h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Play', sans-serif;
+  }
+  
+  .block-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Play', sans-serif;
+  }
