@@ -108,7 +108,7 @@ nav li a:hover {
     border: 5px solid white;
     padding: 20px 100px;
 }
-.container-cards{
+#container-cards{
     width: 100%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
