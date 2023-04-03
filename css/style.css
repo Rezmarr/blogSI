@@ -90,7 +90,6 @@ nav li a:hover {
     /* background-color: #286955; */
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
 
     background: hsla(70, 34%, 62%, 1);
