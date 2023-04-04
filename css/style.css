@@ -394,6 +394,14 @@ footer h3 {
     line-height: 1.5;
     font-family: 'Play', sans-serif;
   }
+  
+  #tablaDinamica th,
+  #tablaDinamica td {
+    padding: 20px;
+  }
+  #tablaDinamica {
+    font-size: 20px;
+  }
   #ventana-emergente {
     display: none;
     position: fixed;
