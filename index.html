@@ -225,15 +225,13 @@
         </div>
     </div>
 
-    <div id="seccionTabla">
+     <div id="seccionTabla">
         <h2 class="subtitulo">Contenido del Curso</h2>
         <table id="tabla">
             <thead>
                 <tr>
                     <th>Nº Semana</th>
                     <th>Temas</th>
-                    <th>Clases</th>
-                    <th>Laboratorio</th>
                     <th>Tareas</th>
                 </tr>
             </thead>
@@ -247,9 +245,7 @@
                         difusos,
                         propiedades,
                         representación</td>
-                    <td><a href="presentacion1.pptx">Descargar</a></td>
-                    <td>-</td>
-                    <td><a href="tarea1.docx">Descargar</a></td>
+                    <td><a id='ver-1' class="botonesVer">Ver</a></td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -260,9 +256,7 @@
                         básicas con
                         conjunto
                         difusos</td>
-                    <td><a href="presentacion2.pptx">Descargar</a></td>
-                    <td><a href="laboratorio1.docx">Descargar</a></td>
-                    <td><a href="tarea2.docx">Descargar</a></td>
+                    <td><a id='ver-2' class="botonesRestringidos" disabled>Ver</a></td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -273,9 +267,7 @@
                         implicaciones,
                         relaciones y
                         reglas difusas</td>
-                    <td><a href="presentacion3.pptx">Descargar</a></td>
-                    <td>-</td>
-                    <td><a href="tarea3.docx">Descargar</a></td>
+                    <td><a id='ver-3' class="botonesRestringidos" disabled>Ver</a></td>
                 </tr>
                 <tr>
                     <td>4</td>
@@ -283,12 +275,128 @@
                         inferencia
                         Difusa, módulos
                         y tipos</td>
-                    <td><a href="presentacion4.pptx">Descargar</a></td>
-                    <td><a href="laboratorio2.docx">Descargar</a></td>
-                    <td><a href="tarea4.docx">Descargar</a></td>
+                    <td><a id='ver-4' class="botonesRestringidos" disabled>Ver</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>• Sistemas
+                        difusos tipo
+                        Mandani<br>
+                        • Sistemas
+                        difusos tipo
+                        Sugeno
+                    </td>
+                    <td><a id='ver-5' class="botonesRestringidos" disabled>Ver</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>• La técnica Fuzzy c-means</td>
+                    <td><a id='ver-6' class="botonesRestringidos" disabled>Ver</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>• Aplicaciones
+                        de sistemas
+                        difusos</td>
+                    <td><a id='ver-7' class="botonesRestringidos" disabled>Ver</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>EXAMEN PARCIAL</strong></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>• Las meta
+                        heurísticas<br>
+                        • Los algoritmos
+                        genéticos,
+                        componentes y
+                        características
+                    </td>
+                    <td><a id='ver-9' class="botonesRestringidos" disabled>Ver</a></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>• Representación
+                        cromosómica<br>
+                        • La función de adaptación o
+                        fitness
+                    </td>
+                    <td><a id='ver-10' class="botonesRestringidos" disabled>Ver</a></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>• Los operadores
+                        de cruzamiento y
+                        mutación<br>
+                        • Aplicaciones
+                    </td>
+                    <td><a id='ver-11' class="botonesRestringidos" disabled>Ver</a></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>• Aplicaciones de
+                        sistemas basados
+                        en algoritmos
+                        genéticos</td>
+                    <td><a id='ver-12' class="botonesRestringidos" disabled>Ver</a></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>• La neurona biológica y las
+                        redes RNA<br>
+                        • Tipos de RNA,
+                        según su
+                        arquitectura
+                    </td>
+                    <td><a id='ver-13' class="botonesRestringidos" disabled>Ver</a></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>• La red
+                        Perceptrón
+                        Unicapa, diseño y
+                        aplicación en
+                        problemas de
+                        clasificación<br>
+                        • La red
+                        Perceptrón
+                        Multicapa con
+                        algoritmo de
+                        aprendizaje
+                        Backpropagation
+                    </td>
+                    <td><a id='ver-14' class="botonesRestringidos" disabled>Ver</a></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>• Aplicaciones de
+                        sistemas basados
+                        en RNA</td>
+                    <td><a id='ver-15' class="botonesRestringidos" disabled>Ver</a></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>EXAMEN FINAL</strong></td>
                 </tr>
             </tbody>
         </table>
+
+        <!--Tabla dinamica-->
+        <div id="ventana-emergente">
+            <div class="contenido-ventana">
+                
+                <table id="tablaDinamica">
+                    <thead>
+                        <tr>
+                            <th>Tarea</th>
+                            <th>Archivo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--El codigo para esta tabla está en el .js-->
+                    </tbody>
+                </table>
+            </div>
+          </div>
     </div>
 
     <footer>
