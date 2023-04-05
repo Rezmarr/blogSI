@@ -62,10 +62,10 @@ function mostrarTabla1() {
     celda21.textContent = "Informe_Semana 01_Sistemas Inteligentes_Grupo.pdf";
   
     const enlace2 = document.createElement("a");
-    enlace1.href = enlaces[0];
-    enlace1.target = "_blank";
-    enlace1.textContent = "Ir al archivo";
-    celda12.appendChild(enlace2);
+    enlace2.href = enlaces[1];
+    enlace2.target = "_blank";
+    enlace2.textContent = "Ir al archivo";
+    celda22.appendChild(enlace2);
 
 }
 
