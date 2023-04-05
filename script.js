@@ -40,8 +40,8 @@ function mostrarVentanaEmergente() {
 // Función para mostrar la tabla 1
 function mostrarTabla1() {
   const enlaces = [
-    'https://docs.google.com/spreadsheets/d/1VFTTKeHW7Ua-3kr6W1v8jAK85VxMiDPW/edit?usp=sharing&ouid=106095924712021991417&rtpof=true&sd=true',
-    'https://docs.google.com/spreadsheets/d/1NReRaMURU_hVgwCBPr2MsbL2OSRxsl6s/edit?usp=sharing&ouid=106095924712021991417&rtpof=true&sd=true'
+    'https://drive.google.com/file/d/1Q4eCGxQKcyU3NCT9_6Tsm0Joh8JDMYSh/view',
+    'https://drive.google.com/file/d/1Q4eCGxQKcyU3NCT9_6Tsm0Joh8JDMYSh/view'
   ];
   const tabla = document.getElementById('tablaDinamica');
   // Borrar todas las filas de la tabla
@@ -51,7 +51,7 @@ function mostrarTabla1() {
   const fila1 = tabla.insertRow();
   const celda11 = fila1.insertCell();
   const celda12 = fila1.insertCell();
-  celda11.textContent = "tarea1.pdf";
+  celda11.textContent = "Semana 01_Sistemas Inteligentes_Grupo.pdf";
 
   const enlace1 = document.createElement("a");
   enlace1.href = enlaces[0];
@@ -75,8 +75,8 @@ function mostrarTabla1() {
 // Función para mostrar la tabla 2
 function mostrarTabla2() {
   const enlaces = [
-    'https://docs.google.com/spreadsheets/d/1VFTTKeHW7Ua-3kr6W1v8jAK85VxMiDPW/edit?usp=sharing&ouid=106095924712021991417&rtpof=true&sd=true',
-    'https://docs.google.com/spreadsheets/d/1NReRaMURU_hVgwCBPr2MsbL2OSRxsl6s/edit?usp=sharing&ouid=106095924712021991417&rtpof=true&sd=true'
+    'https://drive.google.com/file/d/1Q4eCGxQKcyU3NCT9_6Tsm0Joh8JDMYSh/view',
+    'https://drive.google.com/file/d/1Q4eCGxQKcyU3NCT9_6Tsm0Joh8JDMYSh/view'
   ];
   const tabla = document.getElementById('tablaDinamica');
   // Borrar todas las filas de la tabla
@@ -85,7 +85,7 @@ function mostrarTabla2() {
   const fila1 = tabla.insertRow();
   const celda11 = fila1.insertCell();
   const celda12 = fila1.insertCell();
-  celda11.textContent = "tarea1.pdf";
+  celda11.textContent = "Semana 02_Sistemas Inteligentes_Grupo.pdf";
 
   const enlace1 = document.createElement("a");
   enlace1.href = enlaces[0];
