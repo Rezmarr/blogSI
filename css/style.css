@@ -400,7 +400,8 @@ footer h3 {
     padding: 20px;
   }
   #tablaDinamica {
-    font-size: 20px;
+    font-size: 10px;
+    width: 80%; 
   }
   #ventana-emergente {
     display: none;
