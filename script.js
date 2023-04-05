@@ -59,16 +59,6 @@ function mostrarTabla1() {
   enlace1.textContent = "Descargar";
   celda12.appendChild(enlace1);
 
-  // Crear segunda fila
-  const fila2 = tabla.insertRow();
-  const celda21 = fila2.insertCell();
-  const celda22 = fila2.insertCell();
-  celda21.textContent = "tarea2.xlsx";
-  const enlace2 = document.createElement("a");
-  enlace2.href = enlaces[1];
-  enlace1.target = "_blank";
-  enlace2.textContent = "Descargar";
-  celda22.appendChild(enlace2);
 
 }
 
