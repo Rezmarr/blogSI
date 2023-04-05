@@ -37,8 +37,8 @@ ventanaEmergente.addEventListener('click', (event) => {
 // Función para mostrar la tabla 1
 function mostrarTabla1() {
   const enlaces = [
-    "https://drive.google.com/file/d/1Q4eCGxQKcyU3NCT9_6Tsm0Joh8JDMYSh/view?usp=sharing",
-    "https://drive.google.com/file/d/1Q4eCGxQKcyU3NCT9_6Tsm0Joh8JDMYSh/view?usp=sharing"
+    "https://drive.google.com/file/d/1b1rtcdOmgScOx4TU0GLvxdojtCibBtGL/view",
+    "https://drive.google.com/file/d/1_HqBK5ip37FImpJlmfQ4GRrTft_G8RYm/view"
   ];
   const tabla = document.getElementById('tablaDinamica');
   // Borrar todas las filas de la tabla
@@ -47,13 +47,26 @@ function mostrarTabla1() {
   const fila1 = tabla.insertRow();
   const celda11 = fila1.insertCell();
   const celda12 = fila1.insertCell();
-  celda11.textContent = "Semana 01_PPT_Sistemas Inteligentes_Grupo.pdf";
+  celda11.textContent = "Presentación(PPT)_Semana 01_Sistemas Inteligentes_Grupo.pdf";
 
   const enlace1 = document.createElement("a");
   enlace1.href = enlaces[0];
   enlace1.target = "_blank";
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
+
+    // Crear segunda fila
+    const fila2 = tabla.insertRow();
+    const celda21 = fila2.insertCell();
+    const celda22 = fila2.insertCell();
+    celda21.textContent = "Informe_Semana 01_Sistemas Inteligentes_Grupo.pdf";
+  
+    const enlace2 = document.createElement("a");
+    enlace1.href = enlaces[0];
+    enlace1.target = "_blank";
+    enlace1.textContent = "Ir al archivo";
+    celda12.appendChild(enlace2);
+
 }
 
 function mostrarTabla1CLASE() {
