@@ -152,7 +152,7 @@ function mostrarTabla2() {
 
 }
 
-function mostrarTabla1CLASE() {
+function mostrarTabla2CLASE() {
   const tabla = document.getElementById('tablaDinamica');
   // Borrar todas las filas de la tabla
   tabla.innerHTML = '';
@@ -168,7 +168,7 @@ function mostrarTabla1CLASE() {
   celda12.appendChild(enlace1);
 }
 
-function mostrarTabla2() {
+function mostrarTabla3() {
   const enlaces = [
     "https://drive.google.com/file/d/1Dg5gRil0NOp9JesTDNByNciM_EaDb6LM/view"
   ];
