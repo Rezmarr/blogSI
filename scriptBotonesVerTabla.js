@@ -117,7 +117,7 @@ function mostrarTabla1CLASE() {
   celda22.appendChild(enlace2);
 }
 
-// Función para mostrar la tabla 1
+// Función para mostrar la tabla 2
 function mostrarTabla2() {
   const enlaces = [
     "https://drive.google.com/file/d/1mrFkO0MzWEBzTUfOzg9m6EoKh5xzIhyC/view",
@@ -138,17 +138,17 @@ function mostrarTabla2() {
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
 
-    // Crear segunda fila
-    const fila2 = tabla.insertRow();
-    const celda21 = fila2.insertCell();
-    const celda22 = fila2.insertCell();
-    celda21.textContent = "Presentación del Tema_Sistemas Inteligentes_Grupo 3.pdf";
+  // Crear segunda fila
+  const fila2 = tabla.insertRow();
+  const celda21 = fila2.insertCell();
+  const celda22 = fila2.insertCell();
+  celda21.textContent = "Presentación del Tema_Sistemas Inteligentes_Grupo 3.pdf";
   
-    const enlace2 = document.createElement("a");
-    enlace2.href = enlaces[1];
-    enlace2.target = "_blank";
-    enlace2.textContent = "Ir al archivo";
-    celda22.appendChild(enlace2);
+  const enlace2 = document.createElement("a");
+  enlace2.href = enlaces[1];
+  enlace2.target = "_blank";
+  enlace2.textContent = "Ir al archivo";
+  celda22.appendChild(enlace2);
 
 }
 
@@ -168,6 +168,7 @@ function mostrarTabla2CLASE() {
   celda12.appendChild(enlace1);
 }
 
+// Función para mostrar la tabla 3
 function mostrarTabla3() {
   const enlaces = [
     "https://drive.google.com/file/d/1Dg5gRil0NOp9JesTDNByNciM_EaDb6LM/view"
@@ -187,6 +188,21 @@ function mostrarTabla3() {
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
 
+}
+function mostrarTabla3CLASE() {
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "Semana 03_Sistemas Inteligentes_Grupo 3.pdf";
+  const enlace1 = document.createElement("a");
+  enlace1.href = "https://drive.google.com/file/d/1Dg5gRil0NOp9JesTDNByNciM_EaDb6LM/view";
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
 }
 
 function ocultarVentanaEmergente() {
