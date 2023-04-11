@@ -5,6 +5,9 @@ const boton1CLASE = document.getElementById('ver-1_Clases');
 const boton2 = document.getElementById('ver-2');
 const boton2CLASE = document.getElementById('ver-2_Clases');
 
+const boton3 = document.getElementById('ver-3');
+const boton3CLASE = document.getElementById('ver-3_Clases');
+
 // Selecciona la ventana emergente por su identificador único
 const ventanaEmergente = document.getElementById('ventana-emergente');
 
@@ -34,6 +37,18 @@ boton2CLASE.addEventListener('click', () => {
   
 });
 
+// Agrega un evento click al botón 3 para mostrar la tabla 3
+boton3.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla3();
+  
+});
+
+boton3CLASE.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla3CLASE();
+  
+});
 
 ventanaEmergente.addEventListener('click', (event) => {
   if (event.target === ventanaEmergente) {
@@ -134,6 +149,43 @@ function mostrarTabla2() {
     enlace2.target = "_blank";
     enlace2.textContent = "Ir al archivo";
     celda22.appendChild(enlace2);
+
+}
+
+function mostrarTabla1CLASE() {
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "SIMULACIÓN DE CONDUCCIÓN DE UN MÓVIL USANDOLÓGICA DIFUSA";
+  const enlace1 = document.createElement("a");
+  enlace1.href = "https://revistasinvestigacion.unmsm.edu.pe/index.php/sistem/article/view/3208/2676";
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
+}
+
+function mostrarTabla2() {
+  const enlaces = [
+    "https://drive.google.com/file/d/1Dg5gRil0NOp9JesTDNByNciM_EaDb6LM/view"
+  ];
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "Semana 03_Sistemas Inteligentes_Grupo 3.pdf";
+
+  const enlace1 = document.createElement("a");
+  enlace1.href = enlaces[0];
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
 
 }
 
