@@ -225,6 +225,7 @@ function mostrarTabla3CLASE() {
 // Función para mostrar la tabla 4
 function mostrarTabla4() {
   const enlaces = [
+    "https://drive.google.com/file/d/1DJLWGK1eI8ghvQUTYlgMRBObc8N60sCY/view",
     "https://drive.google.com/file/d/1DJLWGK1eI8ghvQUTYlgMRBObc8N60sCY/view"
   ];
   const tabla = document.getElementById('tablaDinamica');
@@ -265,7 +266,7 @@ function mostrarTabla4CLASE() {
   const celda12 = fila1.insertCell();
   celda11.textContent = "SIMULACIÓN DE CONDUCCIÓN DE UN MÓVIL  USANDOLÓGICA DIFUSA (MATLAB)_Sistemas Inteligentes_Grupo 3";
   const enlace1 = document.createElement("a");
-  enlace1.href = "";
+  enlace1.href = "https://drive.google.com/file/d/1DJLWGK1eI8ghvQUTYlgMRBObc8N60sCY/view";
   enlace1.target = "_blank";
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
