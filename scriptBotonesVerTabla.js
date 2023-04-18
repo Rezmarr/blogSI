@@ -8,6 +8,9 @@ const boton2CLASE = document.getElementById('ver-2_Clases');
 const boton3 = document.getElementById('ver-3');
 const boton3CLASE = document.getElementById('ver-3_Clases');
 
+const boton4 = document.getElementById('ver-4');
+const boton4CLASE = document.getElementById('ver-4_Clases');
+
 // Selecciona la ventana emergente por su identificador único
 const ventanaEmergente = document.getElementById('ventana-emergente');
 
@@ -49,6 +52,20 @@ boton3CLASE.addEventListener('click', () => {
   mostrarTabla3CLASE();
   
 });
+
+// Agrega un evento click al botón 4 para mostrar la tabla 4
+boton4.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla4();
+  
+});
+
+boton4CLASE.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla4CLASE();
+  
+});
+
 
 ventanaEmergente.addEventListener('click', (event) => {
   if (event.target === ventanaEmergente) {
@@ -200,6 +217,55 @@ function mostrarTabla3CLASE() {
   celda11.textContent = "Semana 03_Sistemas Inteligentes_Grupo 3.pdf";
   const enlace1 = document.createElement("a");
   enlace1.href = "https://drive.google.com/file/d/1Dg5gRil0NOp9JesTDNByNciM_EaDb6LM/view";
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
+}
+
+// Función para mostrar la tabla 4
+function mostrarTabla4() {
+  const enlaces = [
+    "https://drive.google.com/file/d/1DJLWGK1eI8ghvQUTYlgMRBObc8N60sCY/view"
+  ];
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "Semana 04_Sistemas Inteligentes_Grupo 3.pdf";
+
+  const enlace1 = document.createElement("a");
+  enlace1.href = enlaces[0];
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
+
+  // Crear segunda fila
+  const fila2 = tabla.insertRow();
+  const celda21 = fila2.insertCell();
+  const celda22 = fila2.insertCell();
+  celda21.textContent = "Informe_Sistemas Inteligentes_Grupo 3.pdf";
+    
+  const enlace2 = document.createElement("a");
+  enlace2.href = enlaces[1];
+  enlace2.target = "_blank";
+  enlace2.textContent = "Ir al archivo";
+  celda22.appendChild(enlace2);
+
+}
+function mostrarTabla4CLASE() {
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "SIMULACIÓN DE CONDUCCIÓN DE UN MÓVIL  USANDOLÓGICA DIFUSA (MATLAB)_Sistemas Inteligentes_Grupo 3";
+  const enlace1 = document.createElement("a");
+  enlace1.href = "";
   enlace1.target = "_blank";
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
