@@ -226,7 +226,8 @@ function mostrarTabla3CLASE() {
 function mostrarTabla4() {
   const enlaces = [
     "https://drive.google.com/file/d/1QZZoKHoF--uZcgo6aXuKBdKTtA_HENB6/view",
-    "https://drive.google.com/file/d/13toie1k_DcMJwhsmkH-Mgr8U5RC5IHrG/view"
+    "https://drive.google.com/file/d/13toie1k_DcMJwhsmkH-Mgr8U5RC5IHrG/view",
+    "https://docs.google.com/spreadsheets/d/1cfQ_A3O8pyg2tQ2VxiRmk49aDtSPQVkK/edit?usp=sharing&ouid=114433833571713201083&rtpof=true&sd=true"
   ];
   const tabla = document.getElementById('tablaDinamica');
   // Borrar todas las filas de la tabla
@@ -255,6 +256,17 @@ function mostrarTabla4() {
   enlace2.textContent = "Ir al archivo";
   celda22.appendChild(enlace2);
 
+  // Crear tercera fila
+  const fila3 = tabla.insertRow();
+  const celda31 = fila3.insertCell();
+  const celda32 = fila3.insertCell();
+  celda31.textContent = "Conjuntos y Reglas difusas_Proyecto_Semana 04_Sistemas Inteligentes_Grupo 3";
+    
+  const enlace3 = document.createElement("a");
+  enlace3.href = enlaces[2];
+  enlace3.target = "_blank";
+  enlace3.textContent = "Ir al archivo";
+  celda32.appendChild(enlace3);
 }
 function mostrarTabla4CLASE() {
   const tabla = document.getElementById('tablaDinamica');
