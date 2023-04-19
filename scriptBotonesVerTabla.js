@@ -226,7 +226,7 @@ function mostrarTabla3CLASE() {
 function mostrarTabla4() {
   const enlaces = [
     "https://drive.google.com/file/d/1QZZoKHoF--uZcgo6aXuKBdKTtA_HENB6/view",
-    "https://drive.google.com/file/d/1DJLWGK1eI8ghvQUTYlgMRBObc8N60sCY/view"
+    "https://drive.google.com/file/d/13toie1k_DcMJwhsmkH-Mgr8U5RC5IHrG/view"
   ];
   const tabla = document.getElementById('tablaDinamica');
   // Borrar todas las filas de la tabla
@@ -247,7 +247,7 @@ function mostrarTabla4() {
   const fila2 = tabla.insertRow();
   const celda21 = fila2.insertCell();
   const celda22 = fila2.insertCell();
-  celda21.textContent = "Informe_Sistemas Inteligentes_Grupo 3.pdf";
+  celda21.textContent = "Informe_Control de velocidad de un ventilador según temperatura, humedad y CO2_Sistemas Inteligentes_Grupo 3.pdf";
     
   const enlace2 = document.createElement("a");
   enlace2.href = enlaces[1];
