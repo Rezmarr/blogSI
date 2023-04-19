@@ -225,7 +225,7 @@ function mostrarTabla3CLASE() {
 // Función para mostrar la tabla 4
 function mostrarTabla4() {
   const enlaces = [
-    "https://drive.google.com/file/d/1DJLWGK1eI8ghvQUTYlgMRBObc8N60sCY/view",
+    "https://drive.google.com/file/d/1QZZoKHoF--uZcgo6aXuKBdKTtA_HENB6/view",
     "https://drive.google.com/file/d/1DJLWGK1eI8ghvQUTYlgMRBObc8N60sCY/view"
   ];
   const tabla = document.getElementById('tablaDinamica');
