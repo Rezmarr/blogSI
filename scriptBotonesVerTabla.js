@@ -11,6 +11,9 @@ const boton3CLASE = document.getElementById('ver-3_Clases');
 const boton4 = document.getElementById('ver-4');
 const boton4CLASE = document.getElementById('ver-4_Clases');
 
+const boton5 = document.getElementById('ver-5');
+const boton5CLASE = document.getElementById('ver-5_Clases');
+
 // Selecciona la ventana emergente por su identificador único
 const ventanaEmergente = document.getElementById('ventana-emergente');
 
@@ -66,6 +69,18 @@ boton4CLASE.addEventListener('click', () => {
   
 });
 
+// Agrega un evento click al botón 5 para mostrar la tabla 5
+boton5.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla5();
+  
+});
+
+boton5CLASE.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla5CLASE();
+  
+});
 
 ventanaEmergente.addEventListener('click', (event) => {
   if (event.target === ventanaEmergente) {
@@ -282,6 +297,41 @@ function mostrarTabla4CLASE() {
   enlace1.target = "_blank";
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
+}
+
+// Función para mostrar la tabla 5
+function mostrarTabla5() {
+  const enlaces = [
+    "https://drive.google.com/file/d/1-0sLxPXh86d1l3CZS6ca9d0st4zhpr50/view",
+    "https://drive.google.com/file/d/1WxMelixoo5PxDeOxkBq_TIwRfz18Gxc7/view"
+  ];
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "Semana 05_Sistemas Inteligentes_Grupo 3.pdf";
+
+  const enlace1 = document.createElement("a");
+  enlace1.href = enlaces[0];
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
+
+  // Crear segunda fila
+  const fila2 = tabla.insertRow();
+  const celda21 = fila2.insertCell();
+  const celda22 = fila2.insertCell();
+  celda21.textContent = "Informe del proyecto_Sistemas Inteligentes_Grupo 3.pdf";
+  
+  const enlace2 = document.createElement("a");
+  enlace2.href = enlaces[1];
+  enlace2.target = "_blank";
+  enlace2.textContent = "Ir al archivo";
+  celda22.appendChild(enlace2);
+
 }
 
 function ocultarVentanaEmergente() {
