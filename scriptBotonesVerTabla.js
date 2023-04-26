@@ -302,8 +302,8 @@ function mostrarTabla4CLASE() {
 // Función para mostrar la tabla 5
 function mostrarTabla5() {
   const enlaces = [
-    "https://drive.google.com/file/d/1-0sLxPXh86d1l3CZS6ca9d0st4zhpr50/view",
-    "https://drive.google.com/file/d/1WxMelixoo5PxDeOxkBq_TIwRfz18Gxc7/view"
+    "https://drive.google.com/file/d/1VqsYtF0Hxzq8kt1ow5u3SJtacJFXNg_v/view",
+    "https://drive.google.com/file/d/1uu9ua-1pN4lbA5Y4jA6PK7KAeE_rpybk/view"
   ];
   const tabla = document.getElementById('tablaDinamica');
   // Borrar todas las filas de la tabla
