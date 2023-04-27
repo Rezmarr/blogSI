@@ -383,7 +383,7 @@ function mostrarTabla5CLASE() {
   const celda52 = fila5.insertCell();
   celda51.textContent = "Salvador_Veliz_TareaAlgoritmoDifuso";
   const enlace5 = document.createElement("a");
-  enlace5.href = "https://drive.google.com/file/d/162XdgTlBzJZM50z-rgVrRqHG2WwlFeJw/view?usp=sharing";
+  enlace5.href = "https://drive.google.com/file/d/1oRq4mL25KZVCVuv4rFbku9XoTY_nR5sS/view?usp=sharing";
   enlace5.target = "_blank";
   enlace5.textContent = "Ir al archivo";
   celda52.appendChild(enlace5);
