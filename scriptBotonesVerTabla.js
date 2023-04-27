@@ -357,6 +357,16 @@ function mostrarTabla5CLASE() {
   enlace2.target = "_blank";
   enlace2.textContent = "Ir al archivo";
   celda22.appendChild(enlace2);
+  // Tercera fila
+  const fila3 = tabla.insertRow();
+  const celda31 = fila3.insertCell();
+  const celda32 = fila3.insertCell();
+  celda31.textContent = "Zapata_TareaAlgoritmoDifuso";
+  const enlace3 = document.createElement("a");
+  enlace3.href = "https://drive.google.com/file/d/1w_dOr4VU0fG0vttHEz7hFJM0m1pSZYRw/view";
+  enlace3.target = "_blank";
+  enlace3.textContent = "Ir al archivo";
+  celda32.appendChild(enlace3);
 }
 
 function ocultarVentanaEmergente() {
