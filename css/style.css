@@ -68,7 +68,7 @@ nav li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 26px 16px;
     text-decoration: none;
     /* border-right: 1px solid rgb(40, 105, 85); */
     /* line-height: 50%; */
@@ -78,7 +78,7 @@ nav li a:hover {
     text-decoration: none;
     background-color: #286955;
     color: white;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
 }
 
 .lastA {
@@ -89,10 +89,11 @@ nav li a:hover {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 26px 16px;
     text-decoration: none;
     border: none;
     border-radius: 0;
+    font-size: 20px;
 }
 
 .dropdown .btn:hover {
@@ -101,7 +102,7 @@ nav li a:hover {
     color: white;
     border: none;
     border-radius: 0;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
 }
 
 
@@ -201,7 +202,7 @@ nav li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 2400px;
+    height: 1400px;
 }
 
 .foto {
@@ -343,6 +344,11 @@ footer {
     display: flex;
     align-items: center;
     color: #fff;
+    justify-content: center;
+}
+
+footer row {
+    align-items: center;
 }
 
 footer img {
