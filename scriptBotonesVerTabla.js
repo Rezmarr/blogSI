@@ -377,6 +377,16 @@ function mostrarTabla5CLASE() {
   enlace4.target = "_blank";
   enlace4.textContent = "Ir al archivo";
   celda42.appendChild(enlace4);
+  // Quinta fila
+  const fila5 = tabla.insertRow();
+  const celda51 = fila5.insertCell();
+  const celda52 = fila5.insertCell();
+  celda51.textContent = "Salvador_TareaAlgoritmoDifuso";
+  const enlace5 = document.createElement("a");
+  enlace5.href = "https://drive.google.com/file/d/162XdgTlBzJZM50z-rgVrRqHG2WwlFeJw/view?usp=sharing";
+  enlace5.target = "_blank";
+  enlace5.textContent = "Ir al archivo";
+  celda52.appendChild(enlace5);
 }
 
 function ocultarVentanaEmergente() {
