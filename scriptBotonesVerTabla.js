@@ -347,6 +347,16 @@ function mostrarTabla5CLASE() {
   enlace1.target = "_blank";
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
+  //segunda fila
+  const fila2 = tabla.insertRow();
+  const celda21 = fila2.insertCell();
+  const celda22 = fila2.insertCell();
+  celda21.textContent = "Cruz_Vilca_TareaAlgoritmoDifuso";
+  const enlace2 = document.createElement("a");
+  enlace2.href = "https://drive.google.com/file/d/1CmLBhpUE4hfCTayZmBaxWYUXrTHbp60h/view";
+  enlace2.target = "_blank";
+  enlace2.textContent = "Ir al archivo";
+  celda22.appendChild(enlace2);
 }
 
 function ocultarVentanaEmergente() {
