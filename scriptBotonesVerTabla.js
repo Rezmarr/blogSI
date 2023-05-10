@@ -17,6 +17,11 @@ const boton5CLASE = document.getElementById('ver-5_Clases');
 const boton6 = document.getElementById('ver-6');
 const boton6CLASE = document.getElementById('ver-6_Clases');
 
+
+const boton7 = document.getElementById('ver-7');
+const boton7CLASE = document.getElementById('ver-7_Clases');
+
+
 // Selecciona la ventana emergente por su identificador único
 const ventanaEmergente = document.getElementById('ventana-emergente');
 
@@ -95,6 +100,19 @@ boton6.addEventListener('click', () => {
 boton6CLASE.addEventListener('click', () => {
   mostrarVentanaEmergente();
   mostrarTabla6CLASE();
+  
+});
+
+// Agrega un evento click al botón 7 para mostrar la tabla 7
+boton7.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla7();
+  
+});
+
+boton7CLASE.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla7CLASE();
   
 });
 
@@ -438,6 +456,28 @@ function mostrarTabla6CLASE() {
   celda11.textContent = "Semana 06_Sistemas Inteligentes_Grupo 3.pdf";
   const enlace1 = document.createElement("a");
   enlace1.href = "https://drive.google.com/file/d/1L2y9Q0H9itsmrBMUBypq-ove1jnqRVZi/view";
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
+
+}
+
+// Función para mostrar la tabla 7
+function mostrarTabla7() {
+  const enlaces = [
+    "https://drive.google.com/file/d/1hUDAlFjf9ljWHbraarNRljDxQFxHw75m/view"
+  ];
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "Semana 07_Sistemas Inteligentes_Grupo 3.pdf";
+
+  const enlace1 = document.createElement("a");
+  enlace1.href = enlaces[0];
   enlace1.target = "_blank";
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
