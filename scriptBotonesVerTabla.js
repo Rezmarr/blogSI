@@ -535,6 +535,16 @@ function mostrarTabla8CLASE() {
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
 
+   // Crear segunda fila
+  const fila2 = tabla.insertRow();
+  const celda21 = fila2.insertCell();
+  const celda22 = fila2.insertCell();
+  celda21.textContent = "Informe_Examen Parcial_Sistemas Inteligentes_Grupo 3_Subgrupo02.pdf";
+  const enlace2 = document.createElement("a");
+  enlace2.href = "https://drive.google.com/file/d/15SIzSa5r6BKmuAGUsYPwWDBHJRMcUM3L/view";
+  enlace2.target = "_blank";
+  enlace2.textContent = "Ir al archivo";
+  celda22.appendChild(enlace2);
 }
 
 function ocultarVentanaEmergente() {
