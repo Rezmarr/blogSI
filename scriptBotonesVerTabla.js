@@ -17,10 +17,11 @@ const boton5CLASE = document.getElementById('ver-5_Clases');
 const boton6 = document.getElementById('ver-6');
 const boton6CLASE = document.getElementById('ver-6_Clases');
 
-
 const boton7 = document.getElementById('ver-7');
 const boton7CLASE = document.getElementById('ver-7_Clases');
 
+const boton8 = document.getElementById('ver-8');
+const boton8CLASE = document.getElementById('ver-8_Clases');
 
 // Selecciona la ventana emergente por su identificador único
 const ventanaEmergente = document.getElementById('ventana-emergente');
@@ -113,6 +114,19 @@ boton7.addEventListener('click', () => {
 boton7CLASE.addEventListener('click', () => {
   mostrarVentanaEmergente();
   mostrarTabla7CLASE();
+  
+});
+
+// Agrega un evento click al botón 8 para mostrar la tabla 8
+boton8.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla8();
+  
+});
+
+boton8CLASE.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla8CLASE();
   
 });
 
@@ -478,6 +492,45 @@ function mostrarTabla7() {
 
   const enlace1 = document.createElement("a");
   enlace1.href = enlaces[0];
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
+
+}
+
+// Función para mostrar la tabla 8
+function mostrarTabla8() {
+  const enlaces = [
+    "https://drive.google.com/file/d/14PuC2PK2LRzk1C-lxUYOzFLQ5t-z4wN4/view"
+  ];
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "ProyectoFuzzy_Código en Arduino IDE_Sistemas Inteligentes_Grupo 3.pdf";
+
+  const enlace1 = document.createElement("a");
+  enlace1.href = enlaces[0];
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
+
+}
+
+function mostrarTabla8CLASE() {
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "Informe_Examen Parcial_Sistemas Inteligentes_Grupo 3_Subgrupo01.pdf";
+  const enlace1 = document.createElement("a");
+  enlace1.href = "https://drive.google.com/file/d/11FCONZakfNk_kowc6VhpTxjw6ssB_V3p/view";
   enlace1.target = "_blank";
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
