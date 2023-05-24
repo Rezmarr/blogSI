@@ -23,6 +23,9 @@ const boton7CLASE = document.getElementById('ver-7_Clases');
 const boton8 = document.getElementById('ver-8');
 const boton8CLASE = document.getElementById('ver-8_Clases');
 
+const boton9 = document.getElementById('ver-9');
+const boton9CLASE = document.getElementById('ver-9_Clases');
+
 // Selecciona la ventana emergente por su identificador único
 const ventanaEmergente = document.getElementById('ventana-emergente');
 
@@ -127,6 +130,19 @@ boton8.addEventListener('click', () => {
 boton8CLASE.addEventListener('click', () => {
   mostrarVentanaEmergente();
   mostrarTabla8CLASE();
+  
+});
+
+// Agrega un evento click al botón 9 para mostrar la tabla 9
+boton9.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla9();
+  
+});
+
+boton9CLASE.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla9CLASE();
   
 });
 
@@ -546,6 +562,46 @@ function mostrarTabla8CLASE() {
   enlace2.textContent = "Ir al archivo";
   celda22.appendChild(enlace2);
 }
+
+
+// Función para mostrar la tabla 9
+function mostrarTabla9() {
+  const enlaces = [
+    "https://drive.google.com/file/d/1UNzz4-zTF3QP9P9GHE2V8gicNt8FMk1K/view?usp=sharing"
+  ];
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "Semana 09_Sistemas Inteligentes_Grupo 3.pdf";
+
+  const enlace1 = document.createElement("a");
+  enlace1.href = enlaces[0];
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
+
+}
+
+function mostrarTabla9CLASE() {
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "Examen Parcial_Sistemas Inteligentes 2023-1_Grupo 03_Subgrupo01.pdf";
+  const enlace1 = document.createElement("a");
+  enlace1.href = "https://drive.google.com/file/d/1JAKm1AWF8ukalzkrv5BDTEb7jA9Q6NlD/view?usp=sharing";
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
+}
+
 
 function ocultarVentanaEmergente() {
   ventanaEmergente.style.display = 'none';
