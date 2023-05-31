@@ -26,6 +26,9 @@ const boton8CLASE = document.getElementById('ver-8_Clases');
 const boton9 = document.getElementById('ver-9');
 const boton9CLASE = document.getElementById('ver-9_Clases');
 
+const boton10 = document.getElementById('ver-10');
+const boton10CLASE = document.getElementById('ver-10_Clases');
+
 // Selecciona la ventana emergente por su identificador único
 const ventanaEmergente = document.getElementById('ventana-emergente');
 
@@ -143,6 +146,19 @@ boton9.addEventListener('click', () => {
 boton9CLASE.addEventListener('click', () => {
   mostrarVentanaEmergente();
   mostrarTabla9CLASE();
+  
+});
+
+// Agrega un evento click al botón 10 para mostrar la tabla 10
+boton10.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla10();
+  
+});
+
+boton10CLASE.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla10CLASE();
   
 });
 
@@ -602,6 +618,27 @@ function mostrarTabla9CLASE() {
   celda12.appendChild(enlace1);
 }
 
+// Función para mostrar la tabla 10
+function mostrarTabla10() {
+  const enlaces = [
+    "https://drive.google.com/file/d/1ZGjRVqU2UKKwWugFXLBsuoXn6O7Ei5O2/view?usp=sharing"
+  ];
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "Semana 10_Sistemas Inteligentes_Grupo 3.pdf";
+
+  const enlace1 = document.createElement("a");
+  enlace1.href = enlaces[0];
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
+
+}
 
 function ocultarVentanaEmergente() {
   ventanaEmergente.style.display = 'none';
