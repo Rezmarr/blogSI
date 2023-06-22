@@ -35,6 +35,9 @@ const boton11CLASE = document.getElementById('ver-11_Clases');
 const boton12 = document.getElementById('ver-12');
 const boton12CLASE = document.getElementById('ver-12_Clases');
 
+const boton13 = document.getElementById('ver-13');
+const boton13CLASE = document.getElementById('ver-13_Clases');
+
 // Selecciona la ventana emergente por su identificador único
 const ventanaEmergente = document.getElementById('ventana-emergente');
 
@@ -191,6 +194,19 @@ boton12.addEventListener('click', () => {
 boton12CLASE.addEventListener('click', () => {
   mostrarVentanaEmergente();
   mostrarTabla12CLASE();
+  
+});
+
+// Agrega un evento click al botón 13 para mostrar la tabla 13
+boton13.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla13();
+  
+});
+
+boton13CLASE.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla13CLASE();
   
 });
 
@@ -699,6 +715,22 @@ function mostrarTabla12CLASE() {
   celda11.textContent = "Semana 12_Sistemas Inteligentes_Grupo 3.pdf";
   const enlace1 = document.createElement("a");
   enlace1.href = "https://drive.google.com/file/d/1WL5tiRwnJb8NbQoZjFi6VLsd4_j2Bh7Y/view?usp=sharing";
+  enlace1.target = "_blank";
+  enlace1.textContent = "Ir al archivo";
+  celda12.appendChild(enlace1);
+}
+
+function mostrarTabla13CLASE() {
+  const tabla = document.getElementById('tablaDinamica');
+  // Borrar todas las filas de la tabla
+  tabla.innerHTML = '';
+  // Crear primera fila
+  const fila1 = tabla.insertRow();
+  const celda11 = fila1.insertCell();
+  const celda12 = fila1.insertCell();
+  celda11.textContent = "Semana 13_Sistemas Inteligentes_Grupo 3.pdf";
+  const enlace1 = document.createElement("a");
+  enlace1.href = "https://drive.google.com/file/d/1TbHl8e8lpqqVQMg9TdDhab2D9IEUc1gt/view";
   enlace1.target = "_blank";
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
