@@ -38,6 +38,8 @@ const boton12CLASE = document.getElementById('ver-12_Clases');
 const boton13 = document.getElementById('ver-13');
 const boton13CLASE = document.getElementById('ver-13_Clases');
 
+const boton14 = document.getElementById('ver-14');
+const boton14CLASE = document.getElementById('ver-14_Clases');
 // Selecciona la ventana emergente por su identificador único
 const ventanaEmergente = document.getElementById('ventana-emergente');
 
@@ -207,6 +209,19 @@ boton13.addEventListener('click', () => {
 boton13CLASE.addEventListener('click', () => {
   mostrarVentanaEmergente();
   mostrarTabla13CLASE();
+  
+});
+
+// Agrega un evento click al botón 14 para mostrar la tabla 14
+boton14.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla14();
+  
+});
+
+boton14CLASE.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla14CLASE();
   
 });
 
