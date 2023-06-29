@@ -762,7 +762,7 @@ function mostrarTabla14() {
   const fila1 = tabla.insertRow();
   const celda11 = fila1.insertCell();
   const celda12 = fila1.insertCell();
-  celda11.textContent = "Semana 14_Sistemas Inteligentes_Grupo 3";
+  celda11.textContent = "Semana 14_Sistemas Inteligentes_Grupo3";
 
   const enlace1 = document.createElement("a");
   enlace1.href = enlaces[0];
@@ -779,7 +779,7 @@ function mostrarTabla14CLASE() {
   const fila1 = tabla.insertRow();
   const celda11 = fila1.insertCell();
   const celda12 = fila1.insertCell();
-  celda11.textContent = "Semana 14_Sistemas Inteligentes_Grupo 3";
+  celda11.textContent = "Semana 14_Sistemas Inteligentes_Grupo3";
   const enlace1 = document.createElement("a");
   enlace1.href = "https://drive.google.com/drive/u/0/folders/17zIZjmTJi2sQcZv25z6aKiKJH4IFxUzo";
   enlace1.target = "_blank";
