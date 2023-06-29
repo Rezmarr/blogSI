@@ -759,7 +759,7 @@ function mostrarTabla14CLASE() {
   const fila1 = tabla.insertRow();
   const celda11 = fila1.insertCell();
   const celda12 = fila1.insertCell();
-  celda11.textContent = "Semana 13_Sistemas Inteligentes_Grupo 3.pdf";
+  celda11.textContent = "Semana 14_Sistemas Inteligentes_Grupo 3.pdf";
   const enlace1 = document.createElement("a");
   enlace1.href = "https://drive.google.com/file/d/1CZNolvSu6lUzT3rnZdHcY7on7IIo-m7A/view";
   enlace1.target = "_blank";
