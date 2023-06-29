@@ -750,27 +750,7 @@ function mostrarTabla13CLASE() {
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
 }
-// Función para mostrar la tabla 14
-function mostrarTabla14() {
-  const enlaces = [
-    "https://drive.google.com/drive/u/0/folders/17zIZjmTJi2sQcZv25z6aKiKJH4IFxUzo"
-  ];
-  const tabla = document.getElementById('tablaDinamica');
-  // Borrar todas las filas de la tabla
-  tabla.innerHTML = '';
-  // Crear primera fila
-  const fila1 = tabla.insertRow();
-  const celda11 = fila1.insertCell();
-  const celda12 = fila1.insertCell();
-  celda11.textContent = "Semana 14_Sistemas Inteligentes_Grupo 3";
 
-  const enlace1 = document.createElement("a");
-  enlace1.href = enlaces[0];
-  enlace1.target = "_blank";
-  enlace1.textContent = "Ir al archivo";
-  celda12.appendChild(enlace1);
-
-}
 function mostrarTabla14CLASE() {
   const tabla = document.getElementById('tablaDinamica');
   // Borrar todas las filas de la tabla
@@ -779,9 +759,9 @@ function mostrarTabla14CLASE() {
   const fila1 = tabla.insertRow();
   const celda11 = fila1.insertCell();
   const celda12 = fila1.insertCell();
-  celda11.textContent = "Semana 14_Sistemas Inteligentes_Grupo 3";
+  celda11.textContent = "Semana 14_Sistemas Inteligentes_Grupo 3.pdf";
   const enlace1 = document.createElement("a");
-  enlace1.href = "https://drive.google.com/drive/u/0/folders/17zIZjmTJi2sQcZv25z6aKiKJH4IFxUzo";
+  enlace1.href = "https://drive.google.com/file/d/1CZNolvSu6lUzT3rnZdHcY7on7IIo-m7A/view";
   enlace1.target = "_blank";
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
