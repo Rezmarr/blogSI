@@ -751,6 +751,7 @@ function mostrarTabla13CLASE() {
   celda12.appendChild(enlace1);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // Función para mostrar la tabla 14
 function mostrarTabla14() {
@@ -786,6 +787,8 @@ function mostrarTabla14CLASE() {
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
 }
+=======
+>>>>>>> parent of 95e521c (Update scriptBotonesVerTabla.js)
 
 function ocultarVentanaEmergente() {
   ventanaEmergente.style.display = 'none';
