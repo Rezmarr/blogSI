@@ -798,7 +798,7 @@ function mostrarTabla14CLASE() {
   celda12.appendChild(enlace1);
 }
 
-  function mostrarTabla15CLASE() {
+function mostrarTabla15CLASE() {
     const tabla = document.getElementById('tablaDinamica');
     // Borrar todas las filas de la tabla
     tabla.innerHTML = '';
@@ -813,7 +813,7 @@ function mostrarTabla14CLASE() {
     enlace1.textContent = "Ir al archivo";
     celda12.appendChild(enlace1);
   }
-    function mostrarTabla16CLASE() {
+  function mostrarTabla16CLASE() {
     const tabla = document.getElementById('tablaDinamica');
     // Borrar todas las filas de la tabla
     tabla.innerHTML = '';
@@ -828,7 +828,7 @@ function mostrarTabla14CLASE() {
     enlace1.textContent = "Ir al archivo";
     celda12.appendChild(enlace1);
   }
-}
+
 
 function ocultarVentanaEmergente() {
   ventanaEmergente.style.display = 'none';
