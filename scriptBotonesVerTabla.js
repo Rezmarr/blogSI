@@ -822,3 +822,4 @@ function mostrarVentanaEmergente() {
   const ventanaEmergente = document.getElementById('ventana-emergente');
   ventanaEmergente.style.display = 'block';
 }
+}
