@@ -815,11 +815,12 @@ function mostrarTabla14CLASE() {
     enlace1.textContent = "Ir al archivo";
     celda12.appendChild(enlace1);
   }
+}
+
 function ocultarVentanaEmergente() {
   ventanaEmergente.style.display = 'none';
 }
 function mostrarVentanaEmergente() {
   const ventanaEmergente = document.getElementById('ventana-emergente');
   ventanaEmergente.style.display = 'block';
-}
 }
