@@ -796,6 +796,7 @@ function mostrarTabla14CLASE() {
   enlace1.target = "_blank";
   enlace1.textContent = "Ir al archivo";
   celda12.appendChild(enlace1);
+}
 
   function mostrarTabla15CLASE() {
     const tabla = document.getElementById('tablaDinamica');
