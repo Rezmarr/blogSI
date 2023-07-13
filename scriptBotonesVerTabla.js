@@ -231,6 +231,18 @@ boton14CLASE.addEventListener('click', () => {
   mostrarTabla14CLASE();
   
 });
+// Agrega un evento click al botón 15 para mostrar la tabla 15
+boton15.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla15();
+  
+});
+
+boton15CLASE.addEventListener('click', () => {
+  mostrarVentanaEmergente();
+  mostrarTabla15CLASE();
+
+});
 // Agrega un evento click al botón 16 para mostrar la tabla 16
 boton16.addEventListener('click', () => {
   mostrarVentanaEmergente();
