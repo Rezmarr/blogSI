@@ -838,6 +838,17 @@ function mostrarTabla15CLASE() {
     enlace2.target = "_blank";
     enlace2.textContent = "Ir al archivo";
     celda22.appendChild(enlace2);
+
+    // Tercera fila
+    const fila3 = tabla.insertRow();
+    const celda31 = fila3.insertCell();
+    const celda32 = fila3.insertCell();
+    celda32.textContent = "Examen Final - Zapata";
+    const enlace3 = document.createElement("a");
+    enlace3.href = "https://drive.google.com/drive/folders/1Ktdkri_Ex4oAM0BwQYsDakXxlePYrSFi?usp=sharing";
+    enlace3.target = "_blank";
+    enlace3.textContent = "Ir al archivo";
+    celda32.appendChild(enlace3);
   }
 
 
