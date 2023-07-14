@@ -832,7 +832,7 @@ function mostrarTabla15CLASE() {
     const fila2 = tabla.insertRow();
     const celda21 = fila2.insertCell();
     const celda22 = fila2.insertCell();
-    celda21.textContent = "Examen";
+    celda21.textContent = "Examen Final - Salvador";
     const enlace2 = document.createElement("a");
     enlace2.href = "https://drive.google.com/drive/folders/1D1gC4MlAdrQoO8UbJ7doriy4jK9snNzr?usp=sharing";
     enlace2.target = "_blank";
